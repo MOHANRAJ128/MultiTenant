@@ -1,0 +1,31 @@
+<!-- <mat-drawer-container class="example-container">
+    <mat-drawer #drawer mode="side" >I'm a drawer</mat-drawer>
+    <mat-drawer-content>
+      Inside main content
+      <button mat-raised-button (click)="toggle()">Toggle drawer</button>
+      
+  <mat-form-field>
+    <mat-label>Cars</mat-label>
+    <select matNativeControl required>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+  </mat-form-field>
+  <div>
+    Hi Mohan
+  </div>
+    </mat-drawer-content>
+  </mat-drawer-container> -->
+
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+      Sidenav content
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <p><button mat-button (click)="toggleSidenav()">Toggle Sidenav</button></p>
+      <h1>Hi Mohan</h1>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
